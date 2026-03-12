@@ -1,4 +1,4 @@
-# node-escpos-node20
+# escpos-usb-node20
 ESC/POS Printer driver for Node.js for node 20 or higher.
 
 This is the project you need for thermal printer using USB.
@@ -51,17 +51,17 @@ In your project you have this dependency:
 ```bash
 "dependencies": {
   "escpos": "^3.0.0-alpha.6",
-  "node-escpos-node20": "github:jhunexjun/node-escpos-node20"
+  "escpos-usb-node20": "github:jhunexjun/escpos-usb-node20"
 }
 ```
-Or you can add it by `npm install escpos jhunexjun/node-escpos-node20` but to be exact the above version is what I used because `npm install escpos` can install different version.
+Or you can add it by `npm install escpos jhunexjun/escpos-usb-node20` but to be exact the above version is what I used because `npm install escpos` can install different version.
 No need to depend on `usb package` `(npm install usb)` in your project since that's actually dependent to this project, not yours.
     
 ## Usage/Examples
 
 ```javascript
 const escpos = require('escpos');
-escpos.USB = require('node-escpos-node20');
+escpos.USB = require('escpos-usb-node20');
 
 // Select the adapter based on your printer type
 // console.log(escpos.USB.findPrinter());
