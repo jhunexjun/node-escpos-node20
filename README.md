@@ -33,6 +33,12 @@ makes everything compatible because:
 
 ## Installation
 
+This project was tested using
+```bash
+$ node -v
+v20.19.0
+```
+
 If you use this usb as an adapter:
 
 - On Linux, you'll need libudev to build libusb.
