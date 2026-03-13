@@ -1,7 +1,7 @@
 const esbuild = require('esbuild');
 
 esbuild.build({
-  entryPoints: ['src/main.js'],
+  entryPoints: ['src/index.js'],
   bundle: true,
   platform: 'node',
   target: 'node20',
